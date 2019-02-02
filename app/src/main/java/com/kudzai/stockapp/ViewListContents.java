@@ -35,9 +35,9 @@ public class ViewListContents extends AppCompatActivity {
         }else{
             int i=0;
             while(data.moveToNext()){
-                user = new User(data.getString(1),data.getString(2),data.getString(3));
+                user = new User(data.getString(2),data.getString(3),data.getString(6));
                 userList.add(i,user);
-                System.out.println(data.getString(1)+" "+data.getString(2)+" "+data.getString(3));
+                System.out.println(data.getString(2)+" "+data.getString(3)+" "+data.getString(6));
                 System.out.println(userList.get(i).getFirstName());
                 i++;
             }
